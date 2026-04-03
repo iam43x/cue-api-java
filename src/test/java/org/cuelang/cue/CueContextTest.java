@@ -52,7 +52,7 @@ class CueContextTest {
     @Test
     void compileScalarWithOptions() {
         assertDoesNotThrow(() -> {
-           ctx.compile("int", new BuildOption.FileName("empty.cue"), new BuildOption.ImportPath("example.com/foo/bar"));
+            ctx.compile("int", new BuildOption.FileName("empty.cue"), new BuildOption.ImportPath("example.com/foo/bar"));
         });
     }
 
@@ -75,7 +75,7 @@ class CueContextTest {
     @Test
     void compileBytesWithOptions() {
         assertDoesNotThrow(() -> {
-           ctx.compile("int".getBytes(), new BuildOption.FileName("empty.cue"), new BuildOption.ImportPath("example.com/foo/bar"));
+            ctx.compile("int".getBytes(), new BuildOption.FileName("empty.cue"), new BuildOption.ImportPath("example.com/foo/bar"));
         });
     }
 
